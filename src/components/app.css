@@ -4,11 +4,17 @@
   box-sizing: border-box;
 }
 
+:root {
+  --dark-color: rgb(13, 37, 63);
+  --lightblue-color: rgb(1, 180, 228);
+  --lightgreen-color: rgb(144, 206, 161);
+}
+
 .app {
   height: 100%;
   width: 100%;
   min-height: 100vh;
-  background-color: rgb(78, 158, 207);
+  background-color: white;
 }
 
 .movie-list {

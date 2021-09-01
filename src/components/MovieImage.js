@@ -7,7 +7,11 @@ function MovieImage({ imagePath, alt }) {
       <img
         className="movie-image"
         alt={alt}
-        src={`${IMAGE_API}${imagePath}`}
+        src={
+          imagePath === null
+            ? "https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg"
+            : `${IMAGE_API}${imagePath}`
+        }
       ></img>
     </div>
   );

@@ -1,46 +1,82 @@
 .navbar {
   height: fit-content;
   width: 100%;
-  padding: 10px;
-  background-color: rgb(8, 8, 58);
+  padding: 10px 30px;
+  background-color: white;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
+  border-bottom: 2px solid var(--lightgreen-color);
+}
+
+.logo-box {
+  width: 30%;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo {
+  height: 40px;
+  width: 100%;
+  min-height: 30px;
+  min-width: 200px;
+}
+
+.input-field {
+  display: flex;
 }
 
 .navbar-form::placeholder {
-  color: rgba(256, 256, 256, 0.6);
+  color: lightgray;
 }
 
 .navbar-form {
   height: 40px;
   width: fit-content;
   padding: 0 5px 0 5px;
-  background-color: rgb(50, 113, 153);
-  border: 2px solid rgb(8, 8, 58);
+  background-color: white;
+  border: 2px solid var(--lightgreen-color);
   border-radius: 10px;
-  color: white;
+  color: gray;
   font-size: 20px;
+}
+
+.navbar-form:focus {
+  outline-style: none;
+  box-shadow: none;
 }
 
 .navbar-button {
   height: 40px;
   width: 40px;
+  margin-left: 10px;
   background-color: white;
   font-size: 20px;
-  border: 2px solid rgb(8, 8, 58);
+  border: 2px solid var(--dark-color);
   border-radius: 10px;
-  color: rgb(8, 8, 58);
+  color: var(--dark-color);
   cursor: pointer;
   transition: 0.15s ease-in;
 }
 
 .navbar-button:hover {
-  background-color: rgb(50, 113, 153);
+  background-color: var(--lightblue-color);
   color: white;
 }
 
 .navbar-button:active {
   transition: 0.015s ease-in;
   transform: scale(0.9);
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-box {
+    align-items: center;
+  }
 }

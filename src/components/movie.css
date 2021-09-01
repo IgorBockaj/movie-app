@@ -11,7 +11,7 @@
 }
 
 .movie-title {
-  background-color: rgb(8, 8, 58);
+  background: var(--lightblue-color);
   height: fit-content;
   padding: 10px;
   display: flex;
